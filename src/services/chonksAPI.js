@@ -1,5 +1,5 @@
-export const sendChonk = chonk => {
-  const res = fetch(`${process.env.API_URL}/chonks`, {
+export const sendChonk = async(chonk) => {
+  const res = await fetch(`${process.env.API_URL}/chonks`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -7,8 +7,9 @@ export const sendChonk = chonk => {
     body: JSON.stringify(chonk)
   });
 
-  const chonk = await res.json();
-  if(!res.ok) throw chonk;
+  const json = await res.json();
+  if(!res.ok) throw json;
 
-  return chonk;
+  return json;
 };
+
