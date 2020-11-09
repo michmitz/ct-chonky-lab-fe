@@ -10,7 +10,11 @@ jest.mock('../../../services/chonksAPI.js');
 describe('ChonkList component', () => {
   it('displays a list of chonks', async() => {
     getChonks.mockResolvedValue([
-      { id: 1, name: 'Arnold', imageUrl: 'arnold.png' }
+      { id: 1, 
+        name: 'Cinderblock', 
+        weight: 10,
+        description: 'Instagram famous cat that refused to exercise',
+        imageUrl: 'http://cinderblock.com/cinderblock.png' }
     ])
     
     render(
