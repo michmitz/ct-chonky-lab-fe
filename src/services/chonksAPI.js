@@ -13,3 +13,12 @@ export const sendChonk = async(chonk) => {
   return json;
 };
 
+export const getChonks = async() => {
+  const res = await fetch(`${process.env.API_URL}/chonks`);
+  const json = await res.json();
+  if(!res.ok) throw json;
+
+  return json;
+};
+
+
