@@ -12,7 +12,7 @@ const ChonkList = () => {
   }, []);
 
   const chonkElements = chonks.map(chonk => (
-    <li key={chonk.id}>
+    <li data-testid="chonk-list" key={chonk.id}>
       <p>{chonk.name}</p>
     </li>
   ));
