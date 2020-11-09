@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders App 1`] = `
+exports[`CreateChonkForm component renders CreateChonkForm 1`] = `
 <DocumentFragment>
   <form>
     <h2>
@@ -50,6 +50,5 @@ exports[`App component renders App 1`] = `
       Submit Chonk
     </button>
   </form>
-  <ul />
 </DocumentFragment>
 `;
