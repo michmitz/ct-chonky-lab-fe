@@ -21,4 +21,12 @@ export const getChonks = async() => {
   return json;
 };
 
+export const scrapChonk = async(id) => {
+  const res = await fetch(`${process.env.API_URL}/chonks/${id}`, {
+    method: 'DELETE'
+  });
+  const json = await res.json();
+  if(!res.ok) throw json;
 
+  return json;
+}
