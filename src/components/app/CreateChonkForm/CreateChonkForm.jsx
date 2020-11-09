@@ -34,24 +34,29 @@ const CreateChonkForm = () => {
   return (
     <form onSubmit={handleSubmit}> 
       <h2>Create a new chonk!</h2>
+      
+      <label htmlFor="chonk-name">Chonk Name</label>
       <input 
         type="text" 
         name="name" 
         value={name} 
         onChange={handleChange} />
 
+      <label htmlFor="chonk-weight">Chonk Weight</label>
       <input 
         type="number" 
         name="weight"
         value={weight}
         onChange={handleChange} />
 
+      <label htmlFor="chonk-description">Chonk Description</label>
       <input 
         type="text" 
         name="description"
         value={description}
         onChange={handleChange} />
 
+      <label htmlFor="chonk-image">Chonk Image Url</label>
       <input 
         type="text" 
         name="imageUrl" 
